@@ -43,6 +43,8 @@ void insertMap(HashMap * map, char * key, void * value) {
   if(map == NULL || key == NULL) return;
 
   int i = hash(key, map -> capacity);
+
+  Pair *current_pair = map -> buckets[i];
 }
 
 void enlarge(HashMap * map) {
