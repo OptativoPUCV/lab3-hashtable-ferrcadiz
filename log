@@ -14,3 +14,14 @@ Thu 07 Sep 2023 07:58:14 PM UTC:
  tests:  1|5
 total_score: 10/70
 df85dfc
+Thu 07 Sep 2023 08:01:03 PM UTC: 
+ hashmap.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:4:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:45:7: error: unused variable ‘i’ [-Werror=unused-variable]
+   45 |   int i = hash(key, map -> capacity);
+      |       ^
+cc1: all warnings being treated as errors
+Compilation failed
+6cc2bd4
