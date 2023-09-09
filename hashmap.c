@@ -53,7 +53,7 @@ void insertMap(HashMap * map, char * key, void * value) {
   posicion = (posicion + 1) % map -> capacity;
 
   Pair* new_pair = createPair(key, value);
-  
+  if(new_pair == NULL) return;
   
 }
 
