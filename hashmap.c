@@ -93,6 +93,8 @@ Pair * searchMap(HashMap * map,  char * key) {
       return map -> buckets[posicion];
     }
     posicion = (posicion + 1) % map -> capacity;
+
+    if(posicion == hash(key, map -> capacity)) break;
   }
 
   return NULL;
