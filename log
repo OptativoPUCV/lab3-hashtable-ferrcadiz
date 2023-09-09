@@ -87,3 +87,9 @@ hashmap.c:47:9: error: unused variable ‘current_pair’ [-Werror=unused-variab
 cc1: all warnings being treated as errors
 Compilation failed
 ed0d8b4
+Sat 09 Sep 2023 12:15:28 AM UTC: 
+ hashmap.c | 2 --
+ 1 file changed, 2 deletions(-)
+ tests:  1|5
+total_score: 10/70
+4483bb9
