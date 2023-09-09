@@ -219,3 +219,15 @@ Sat 09 Sep 2023 01:02:27 AM UTC:
  tests:  11|2
 total_score: 50/70
 6fd3811
+Sat 09 Sep 2023 02:46:30 AM UTC: 
+ hashmap.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:4:
+hashmap.c: In function ‘firstMap’:
+hashmap.c:118:21: error: ‘key’ undeclared (first use in this function); did you mean ‘key_t’?
+  118 |   if(map == NULL || key == NULL) return NULL;
+      |                     ^~~
+      |                     key_t
+hashmap.c:118:21: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+bac5deb
