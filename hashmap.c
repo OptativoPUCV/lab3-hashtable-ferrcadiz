@@ -61,8 +61,6 @@ void insertMap(HashMap * map, char * key, void * value) {
 
 void enlarge(HashMap * map) {
     enlarge_called = 1; //no borrar (testing purposes)
-
-
 }
 
 
@@ -84,9 +82,17 @@ void eraseMap(HashMap * map,  char * key) {
 }
 
 Pair * searchMap(HashMap * map,  char * key) {   
+  if(map == NULL || key == NULL) return;
 
+  int posicion = hash(key, map -> capacity);
 
-    return NULL;
+  while(map -> buckets[posicion] != NULL){
+    if(is_equal(map -> buckets[posicion]-> key, key)) return;
+
+    posicion = (posicion + 1) % map -> capacity;
+  }
+
+  return NULL;
 }
 
 Pair * firstMap(HashMap * map) {
