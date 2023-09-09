@@ -52,6 +52,10 @@ void insertMap(HashMap * map, char * key, void * value) {
 
   Pair* new_pair = createPair(key, value);
   if(new_pair == NULL) return;
+
+  map -> buckets[posicion] = new_pair;
+  map -> size++;
+  map -> current = posicion;
   
 }
 
