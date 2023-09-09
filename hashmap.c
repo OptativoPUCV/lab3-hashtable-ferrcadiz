@@ -115,9 +115,18 @@ Pair * searchMap(HashMap * map,  char * key) {
 }
 
 Pair * firstMap(HashMap * map) {
-  if(map == NULL || key == NULL) return NULL;
+  if(map == NULL) return NULL;
 
-    return NULL;
+  int posicion = map -> current + 1;
+
+  while(posicion < map -> capacity){
+    if(map -> buckets[posicion] != NULL & map -> buckets[posicion] -> key != NULL){
+      map -> current = posicion;
+      return  map -> buckets[posicion];
+    }
+  }
+  
+return NULL;
 }
 
 Pair * nextMap(HashMap * map) {
