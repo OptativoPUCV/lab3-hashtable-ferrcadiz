@@ -90,7 +90,9 @@ void eraseMap(HashMap * map,  char * key) {
     }
     posicion = (posicion + 1) % map -> capacity;
 
-}
+    if(posicion == hash(key, map -> capacity)) break;
+  }
+  
 } 
 
 Pair * searchMap(HashMap * map,  char * key) {   
