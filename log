@@ -330,3 +330,15 @@ hashmap.c:67:10: error: unused variable ‘oldBuckets’ [-Werror=unused-variabl
 cc1: all warnings being treated as errors
 Compilation failed
 fadb27d
+Sat 09 Sep 2023 03:12:59 AM UTC: 
+ hashmap.c | 13 +++----------
+ 1 file changed, 3 insertions(+), 10 deletions(-)
+In file included from test.c:4:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:80:31: error: ‘posiciom’ undeclared (first use in this function); did you mean ‘posicion’?
+   80 |     insertMap(map, oldBuckets[posiciom] -> key, oldBuckets[posicion] -> value);
+      |                               ^~~~~~~~
+      |                               posicion
+hashmap.c:80:31: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+caa5740

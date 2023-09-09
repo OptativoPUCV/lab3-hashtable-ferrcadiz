@@ -72,21 +72,14 @@ void enlarge(HashMap * map) {
 
   map -> size = 0;
 
-  int posicion = 0
+  int posicion = 0;
   while(posicion < map -> capacity / 2){
-    if(oldBuckets[posicion] != NULL && oldBuckets[posicion] -> key != NULL){
-    insertMap(map, oldBuckets[posiciom] -> key, oldBuckets[posicion] -> value);
     
+    if(oldBuckets[posicion] != NULL && oldBuckets[posicion] -> key != NULL){
+    
+    insertMap(map, oldBuckets[posiciom] -> key, oldBuckets[posicion] -> value);
     }
   }
-  
-
-  
-  
-  
-  
-
-  
 }
 
 
