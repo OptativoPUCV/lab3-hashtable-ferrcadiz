@@ -242,3 +242,9 @@ hashmap.c:123:33: error: suggest parentheses around comparison in operand of ‘
 cc1: all warnings being treated as errors
 Compilation failed
 a1f266d
+Sat 09 Sep 2023 02:54:21 AM UTC: 
+ hashmap.c | 15 ++++++++-------
+ 1 file changed, 8 insertions(+), 7 deletions(-)
+ tests:  11|2
+total_score: 50/70
+34a3d11
