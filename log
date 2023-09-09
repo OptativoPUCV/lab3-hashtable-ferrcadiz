@@ -36,3 +36,18 @@ hashmap.c:47:9: error: unused variable ‘current_pair’ [-Werror=unused-variab
 cc1: all warnings being treated as errors
 Compilation failed
 74e36d7
+Sat 09 Sep 2023 12:10:32 AM UTC: 
+ hashmap.c | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:47:39: error: ‘i’ undeclared (first use in this function)
+   47 |   Pair *current_pair = map -> buckets[i];
+      |                                       ^
+hashmap.c:47:39: note: each undeclared identifier is reported only once for each function it appears in
+hashmap.c:47:9: error: unused variable ‘current_pair’ [-Werror=unused-variable]
+   47 |   Pair *current_pair = map -> buckets[i];
+      |         ^~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+4699f12

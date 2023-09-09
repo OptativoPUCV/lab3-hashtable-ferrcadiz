@@ -42,9 +42,14 @@ int is_equal(void* key1, void* key2){
 void insertMap(HashMap * map, char * key, void * value) {
   if(map == NULL || key == NULL) return;
 
-  int i = hash(key, map -> capacity);
+  int posicion = hash(key, map -> capacity);
 
   Pair *current_pair = map -> buckets[i];
+
+  while(map -> buckets[posicion] != NULL){
+    if(is_equal(map -> buckets[posicion]-> key, key)) return;
+  }
+  
 }
 
 void enlarge(HashMap * map) {
