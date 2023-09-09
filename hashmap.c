@@ -81,6 +81,7 @@ void enlarge(HashMap * map) {
     }
     posicion++;
   }
+  free(oldBuckets);
 }
 
 
