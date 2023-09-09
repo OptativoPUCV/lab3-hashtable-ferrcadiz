@@ -69,6 +69,13 @@ void enlarge(HashMap * map) {
   map -> capacity *=2;
 
   map -> buckets = (Pair **) calloc( map -> capacity, sizeof(Pair*));
+
+  map -> size = 0;
+
+  int posicion = 0
+  while(posicion < map -> capacity / 2){
+    if(old)
+  }
   
 
   
