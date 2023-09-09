@@ -125,3 +125,9 @@ hashmap.c:84:8: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 6b57ab4
+Sat 09 Sep 2023 12:35:06 AM UTC: 
+ hashmap.c | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+ tests:  8|3
+total_score: 40/70
+6fa9226
