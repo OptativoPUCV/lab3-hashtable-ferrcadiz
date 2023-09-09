@@ -313,3 +313,20 @@ hashmap.c:67:10: error: unused variable ‘old_buckets’ [-Werror=unused-variab
 cc1: all warnings being treated as errors
 Compilation failed
 375a45a
+Sat 09 Sep 2023 03:11:57 AM UTC: 
+ hashmap.c | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+In file included from test.c:4:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:76:3: error: expected ‘,’ or ‘;’ before ‘while’
+   76 |   while(posicion < map -> capacity / 2){
+      |   ^~~~~
+hashmap.c:75:7: error: unused variable ‘posicion’ [-Werror=unused-variable]
+   75 |   int posicion = 0
+      |       ^~~~~~~~
+hashmap.c:67:10: error: unused variable ‘oldBuckets’ [-Werror=unused-variable]
+   67 |   Pair** oldBuckets = map -> buckets;
+      |          ^~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+fadb27d
