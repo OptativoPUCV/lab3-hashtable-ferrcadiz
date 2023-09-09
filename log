@@ -342,3 +342,9 @@ hashmap.c:80:31: error: ‘posiciom’ undeclared (first use in this function); 
 hashmap.c:80:31: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 caa5740
+Sat 09 Sep 2023 03:13:52 AM UTC: 
+ hashmap.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+ tests:  17|0
+total_score: 70/70
+502d71b

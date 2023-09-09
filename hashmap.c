@@ -77,8 +77,9 @@ void enlarge(HashMap * map) {
     
     if(oldBuckets[posicion] != NULL && oldBuckets[posicion] -> key != NULL){
     
-    insertMap(map, oldBuckets[posiciom] -> key, oldBuckets[posicion] -> value);
+    insertMap(map, oldBuckets[posicion] -> key, oldBuckets[posicion] -> value);
     }
+    posicion++;
   }
 }
 
