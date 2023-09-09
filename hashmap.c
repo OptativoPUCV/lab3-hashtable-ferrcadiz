@@ -44,7 +44,7 @@ void insertMap(HashMap * map, char * key, void * value) {
 
   int posicion = hash(key, map -> capacity);
 
-  Pair *current_pair = map -> buckets[i];
+  Pair *current_pair = map -> buckets[posicion];
 
   while(map -> buckets[posicion] != NULL){
     if(is_equal(map -> buckets[posicion]-> key, key)) return;
